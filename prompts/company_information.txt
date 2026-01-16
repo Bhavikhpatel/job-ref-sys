@@ -1,0 +1,71 @@
+You are an expert career research assistant.
+
+INPUT:
+Company website URL: $company_website
+
+TASK:
+Visit and analyze ONLY the given company website. Do NOT assume or hallucinate information from external sources.
+
+Extract, infer, and summarize all information that would be highly relevant and useful for cold messaging a current employee of this company to politely seek a job referral.
+
+OUTPUT STRUCTURE (STRICTLY FOLLOW):
+
+1. Company Snapshot
+   - Company name
+   - Industry / domain
+   - Core products or services
+   - Target customers or market
+   - Company size indication (if available)
+   - Headquarters / locations (if mentioned)
+
+2. Company Mission, Vision & Values
+   - Mission statement (exact or inferred)
+   - Vision or long-term goals
+   - Core values or principles
+   - Key themes emphasized (e.g., innovation, AI, sustainability, customer-first, scale)
+
+3. Technology & Skills Landscape
+   - Technologies, tools, platforms, or frameworks mentioned
+   - Engineering, data, AI, cloud, or product focus areas
+   - Any tech stack hints from blogs, careers, or product pages
+
+4. Hiring & Growth Signals
+   - Career page insights
+   - Roles frequently mentioned
+   - Growth, expansion, or scaling indicators
+   - Keywords indicating hiring mindset (e.g., “fast-growing”, “scaling”, “building”, “hiring”)
+
+5. Culture & Work Environment
+   - Work culture indicators (collaboration, ownership, learning, remote/hybrid)
+   - Employee values implied by language used on the site
+   - Diversity, inclusion, learning, or mentorship mentions
+
+6. Business Challenges & Opportunities (Inferred)
+   - Problems the company is trying to solve
+   - Market or technical challenges hinted at
+   - Opportunities where new talent could add value
+
+7. Talking Points for Cold Messaging (MOST IMPORTANT)
+   - 5–7 highly personalized talking points derived ONLY from the website
+   - Each talking point should:
+     - Reference a specific company focus, product, or value
+     - Be usable to start a genuine conversation
+     - Naturally lead into a referral request
+
+8. Referral Angle Suggestions
+   - How to position myself as a relevant candidate based on:
+     - Company goals
+     - Technology focus
+     - Growth stage
+   - What type of roles I should ask about
+
+9. Do’s and Don’ts for Messaging This Company
+   - What to emphasize
+   - What to avoid mentioning
+   - Tone recommendation (formal / friendly / innovative / mission-driven)
+
+IMPORTANT CONSTRAINTS:
+- Use ONLY information from the provided website
+- If something is not found, clearly state “Not mentioned on website”
+- Do NOT fabricate data
+- Be concise, professional, and actionable

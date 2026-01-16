@@ -1,0 +1,13 @@
+flask
+cloud-sql-python-connector[pymysql]
+SQLAlchemy
+pymysql
+python-dotenv
+google-genai
+ulid-py
+flask-cors
+playwright
+python-docx
+docxtpl
+docx2pdf
+google-cloud-storage

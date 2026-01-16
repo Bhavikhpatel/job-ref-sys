@@ -1,0 +1,413 @@
+Role:
+You are an intelligent information extraction assistant.
+
+Task:
+Given unstructured LinkedIn profile text as input, extract and normalize the information into the exact JSON structure defined below.
+
+Rules & Constraints:
+
+Output ONLY valid JSON — no explanations, no markdown, no extra text.
+
+Use lowercase for values unless they are proper nouns (names, universities, companies).
+
+If information is missing, return an empty string "" or empty array [].
+
+Summarize long descriptions concisely without changing meaning.
+
+previous_experiences and education must be arrays of objects, not plain strings.
+
+additional_info must be a list of actionable, personalized cold-messaging insights useful for:
+
+job referrals
+
+mentorship
+
+career guidance
+
+Do not hallucinate facts. Extract only from provided input.
+
+Output Structure (Strictly Follow This Schema):
+{
+  "name": "",
+  "headline": "",
+  "about": "",
+  "current_company": "",
+  "current_job_title": "",
+  "duration_in_current_company": "",
+  "currect_company_location": "",
+  "previous_experiences": [
+    {
+      "company_name": "job_title"
+    }
+  ],
+  "education": [
+    {
+      "institution_name": "degree"
+    }
+  ],
+  "additional_info": [
+    ""
+  ]
+}
+
+Special Instructions for additional_info:
+
+Generate 3–6 short bullet-style strings that:
+
+Reference the person’s current company or past experience
+
+Highlight common ground (domain, tech stack, recruiting area, geography)
+
+Indicate why reaching out makes sense
+
+Are phrased in a way that helps craft a polite referral or guidance request
+
+Example tone:
+
+“Has experience hiring AI/ML engineers across EMEA — valuable for understanding global hiring trends.”
+
+“Currently recruiting at Apple India, making them relevant for internal referral conversations.”
+
+“Previously worked at Meta and Amazon, indicating strong big-tech hiring exposure.”
+
+Input: You will receive raw LinkedIn profile text similar to scraped or copied content.
+
+Output: Return only the JSON object strictly matching the schema above.
+
+example:
+<example 1>
+<input>
+Akhil Ravipalli 
+ He/Him  2nd degree connection2nd
+ Corporate Recruiting @ Apple || Ex-Meta, London || Ex- Amazon
+
+Apple
+Hyderabad, Telangana, India  Contact info
+500+ connections
+
+
+Chandrakiran Guthavari Ramesh, Alok Srivastava, and 5 other mutual connectionsChandrakiran Guthavari Ramesh, Alok Srivastava, and 5 other mutual connections
+
+Connect
+
+Message
+
+More
+
+Profile enhanced with Premium
+AboutAbout
+As an accomplished talent partner with 8 years of experience building top-performing teams across multiple countries. Whether it's identifying and securing diverse talent, hiring for leadership roles, or mentoring junior team members, I have a proven track record of success. With extensive experience in companies like Apple, Meta, Amazon, Infor and working in a startup environment, I possess a deep understanding of the nuances and cultural differences within each market.As an accomplished talent partner with 8 years of experience building top-performing teams across multiple countries. Whether it's identifying and securing diverse talent, hiring for leadership roles, or mentoring junior team members, I have a proven track record of success. With extensive experience in companies like Apple, Meta, Amazon, Infor and working in a startup environment, I possess a deep understanding of the nuances and cultural differences within each market.
+FeaturedFeatured
+Recommendation
+Recommendation
+Roman Strom
+Roman Strom
+Roman Strom
+· 3rdThird degree connection
+Senior Recruiter @ MetaSenior Recruiter @ Meta
+February 1, 2023, Roman managed Akhil directlyFebruary 1, 2023, Roman managed Akhil directly
+I've been supporting Akhil for almost a year. Akhil is a hard working individual. He has vast knowledge of recruiting for ML, Computer Vision and SWE roles. In his day to day, Akhil is motivated by results, delivers consistently, stays on top of his metrics, is able to self-correct and - genuinely - seeks to contribute meaningfully to the work of others in the team. Akhil is also fun to have on the team, he is approachable, he builds communities fast and people naturally rely him. Akhil is talented and is a huge asset for any team he is on.I've been supporting Akhil for almost a year. Akhil is a hard working individual. He has vast knowledge of recruiting for ML, Computer Vision and SWE roles. In his day to day, Akhil is motivated by results, delivers consistently, stays on top of his metrics, is able to self-correct and - genuinely - seeks to contribute meaningfully to the work of others in the team. Akhil is also fun to have on the team, he is approachable, he builds communities fast and people naturally rely him. Akhil is talented and is a huge asset for any team he is on.
+Featured with Premium
+Featured with Premium
+Post
+Post
+I’m happy to share that I moved to London and started a new position in the Machine Learning recruitment team at Meta
+
+Into the Metaverse :)
+
+hashtag#meta hashtag#london hashtag#recruitment hashtag#recruiter
+No alternative text description for this image
+likecelebratelove
+662
+91 comments
+Post
+Post
+Successfully completed People Analytics certification course from The Wharton School of the University of Pennsylvania.
+hashtag#quarantinelearning hashtag#peopleanalytics hashtag#hr hashtag#hranalytics hashtag#learningeveryday
+No alternative text description for this image
+likecelebrate
+24
+4 comments
+Post
+Post
+Completed LinkedIn Technical Recruiter certification
+hashtag#techrecruiting hashtag#techhiring hashtag#technicalrecruiter hashtag#technicalrecruitment hashtag#techjobs hashtag#infor hashtag#quarantinelearning hashtag#linkedinlearning 
+No alternative text description for this image
+like
+7
+
+ActivityActivity
+15,212 followers15,212 followers
+
+
+Posts
+
+Comments
+
+Videos
+Loaded 9 Posts posts
+View Akhil Ravipalli’s  graphic link
+Akhil RavipalliAkhil Ravipalli
+   • 2ndPremium • 2nd
+ Corporate Recruiting @ Apple || Ex-Meta, London || Ex- Amazon Corporate Recruiting @ Apple || Ex-Meta, London || Ex- Amazon
+1mo •  1 month ago • Visible to anyone on or off LinkedIn
+
+Exciting Opportunity at Apple India!
+
+We are looking for Field Service Engineers in Mumbai and Delhi!
+
+The people here at Apple don’t just build products — they build the kind of wonder that’s revolutionised entire industries.
+
+Field Services Engineer will be responsible for deploying and maintaining servers and supporting fixtures and infrastructure in remote data centers located within India and some other global sites.
+
+Apply to join us!!
+
+Rohit Sinha David Lordan
+
+hashtag#fieldserviceengineer hashtag#datacenter hashtag#infrastructure hashtag#deployment hashtag#siteservices
+https://lnkd.in/guViAqpF
+…more
+
+Field Services Engineer - Jobs at Apple (IN)
+jobs.apple.com
+likesupport
+144
+13 reposts
+
+
+
+
+Akhil’s profile photo
+Akhil Ravipalli reposted this
+
+View Lavanya Ivaturi’s  graphic link
+Lavanya IvaturiLavanya Ivaturi
+   • 2ndPremium • 2nd
+ Corporate Recruiting @Apple | Ex Talent Acquisition Business Partner @Deloitte Corporate Recruiting @Apple | Ex Talent Acquisition Business Partner @Deloitte
+1mo •  1 month ago • Visible to anyone on or off LinkedIn
+Exciting Opportunity at Apple India!
+
+We are looking for a Network Reliability Engineer in Bengaluru!
+
+Imagine what you could do here. At Apple, new ideas have a way of becoming phenomenal products, services, and customer experiences very quickly. 
+
+The Network Reliability Engineer is a highly technical, hands-on role in a dynamic and fast paced environment. Looking for an Engineer who has multidisciplinary expertise in Networking, Security and DevOps domains and will be responsible for designing, supporting and securing critical networks deployed in global locations. 
+
+hashtag#Apply to Join Us, Be You!
+
+https://lnkd.in/gnjwA_Vk
+
+hashtag#NetworkingReliabilityEngineer hashtag#Apple hashtag#hiring
+
+Rohit Sinha Vincent Xiong
+…more
+likesupportlove
+646
+23 reposts
+
+
+
+
+View Akhil Ravipalli’s  graphic link
+Akhil RavipalliAkhil Ravipalli
+   • 2ndPremium • 2nd
+ Corporate Recruiting @ Apple || Ex-Meta, London || Ex- Amazon Corporate Recruiting @ Apple || Ex-Meta, London || Ex- Amazon
+2mo •  2 months ago • Visible to anyone on or off LinkedIn
+
+Join the Apple team!!
+
+The people here at Apple don’t just build products — they build the kind of wonder that’s revolutionised entire industries.
+
+We are seeking a PLM Engineer who has a proven track record in designing and developing high quality enterprise software solutions
+
+You will also enjoy the benefits of working in a fast-growing business where you are encouraged to "Think Different" and where your efforts play a key role in the success of Apple's product design and innovation.
+
+Apply to join us!!
+
+Anil Prabhu Milind Mulay,
+
+hashtag#PLM hashtag#Productlifecycle hashtag#PLMEngineering hashtag#BMIDE hashtag#apple hashtag#hiring
+
+https://lnkd.in/exCcX_3A
+…more
+
+PLM Software Engineer - Jobs at Apple (IN)
+jobs.apple.com
+likesupport
+140
+11 reposts
+
+
+
+
+
+Show all posts
+ExperienceExperience
+Apple logo
+Corporate Recruiter
+Corporate Recruiter
+AppleApple
+Apr 2024 - Present · 1 yr 10 mosApr 2024 to Present · 1 yr 10 mos
+Hyderabad, Telangana, IndiaHyderabad, Telangana, India
+Technical Recruiting, Sourcing and +3 skills
+Even logo
+Recruitment Partner
+Recruitment Partner
+EvenEven
+May 2023 - Feb 2024 · 10 mosMay 2023 to Feb 2024 · 10 mos
+Bengaluru, Karnataka, IndiaBengaluru, Karnataka, India
+Part of an Health tech startup, collaborated closely with co-founders to align recruitment strategies with the company's vision and growth plans, also scaling teams from the scratch.
+Leading Tech, engineering, Business (B2B & B2C) and Product & design hiring.Part of an Health tech startup, collaborated closely with co-founders to align recruitment strategies with the company's vision and growth plans, also scaling teams from the scratch. Leading Tech, engineering, Business (B2B & B2C) and Product & design hiring.…see more
+Meta logo
+Tech Recruiter- AI/ML
+Tech Recruiter- AI/ML
+MetaMeta
+Apr 2022 - Mar 2023 · 1 yrApr 2022 to Mar 2023 · 1 yr
+London, England, United Kingdom · On-siteLondon, England, United Kingdom · On-site
+Worked in Meta London office- Onsite
+Part of Artificial Intelligence & Machine Learning recruitment team (UK & EMEA)
+Responsible for hiring lead computer vision engineers for Meta’s Reality Labs in UK & EMEA
+Responsible for hiring lead ML engineers and principle engineers for Facebook Ads team, Instagram reels teams in UK & EMEA locations
+
+Meta's mission is to give people the power to build community and bring the world closer together. Our products empower more than 3 billion people around the world to share ideas, offer support and make a difference.
+
+What we build: Facebook, Messenger, Instagram, WhatsApp, Meta Quest, Workplace, Meta Portal, NoviWorked in Meta London office- Onsite Part of Artificial Intelligence & Machine Learning recruitment team (UK & EMEA) Responsible for hiring lead computer vision engineers for Meta’s Reality Labs in UK & EMEA Responsible for hiring lead ML engineers and principle engineers for Facebook Ads team, Instagram reels teams in UK & EMEA locations Meta's mission is to give people the power to build community and bring the world closer together. Our products empower more than 3 billion people around the world to share ideas, offer support and make a difference. What we build: Facebook, Messenger, Instagram, WhatsApp, Meta Quest, Workplace, Meta Portal, Novi…see more
+Amazon logo
+Recruiter- I, Consumer Tech
+Recruiter- I, Consumer Tech
+AmazonAmazon
+Aug 2021 - Apr 2022 · 9 mosAug 2021 to Apr 2022 · 9 mos
+Hyderabad, Telangana, IndiaHyderabad, Telangana, India
+ helped me get this job
+LinkedIn helped me get this job
+Complete candidate ownership in accordance with the full recruitment lifecycle (sourcing, interviewing, assessing, making offer and onboarding)
+Responsible in hiring for Key product Units: Amazon prime, Amazon music, Amazon fintech and HR tech org
+Mentored new joiners and team members on sourcing strategies, X-ray search and on passive sourcing techniques
+Uses internal and/or external sourcing tools, mechanisms and search logic (e.g., Boolean, iCIMS, Beamery, LinkedIn Recruiter, diversity data, etc.) to generate candidates.
+Pre-screen candidate to confirm candidate motivation, compensation expectations, skill level, and availability.
+Preparation calls with candidates before their phone screens & onsite interviews.Complete candidate ownership in accordance with the full recruitment lifecycle (sourcing, interviewing, assessing, making offer and onboarding) Responsible in hiring for Key product Units: Amazon prime, Amazon music, Amazon fintech and HR tech org Mentored new joiners and team members on sourcing strategies, X-ray search and on passive sourcing techniques Uses internal and/or external sourcing tools, mechanisms and search logic (e.g., Boolean, iCIMS, Beamery, LinkedIn Recruiter, diversity data, etc.) to generate candidates. Pre-screen candidate to confirm candidate motivation, compensation expectations, skill level, and availability. Preparation calls with candidates before their phone screens & onsite interviews.…see more
+Diversity & Inclusion, Technical Recruiting and +2 skills
+Infor logo
+Recruiter
+Recruiter
+InforInfor
+Jul 2019 - Aug 2021 · 2 yrs 2 mosJul 2019 to Aug 2021 · 2 yrs 2 mos
+Hyderabad, Telangana, IndiaHyderabad, Telangana, India
+Working as a Recruiting Strategic Partner for the business units, Engineering teams, Cloud Product teams.
+End to End Recruitment, Technology recruitment, Internal Recruitment, Campus Recruitment 
+Working closely with hiring managers to establish comprehensive sourcing strategies to meet current hiring needs as well as to build pipelines for the projected requirements.
+Sourcing, screening, and qualifying the candidates and sharing the recommendations with hiring managers, on why would the candidate be a valuable addition to the team.
+Defining Hiring Bar and Talent Advisory Planning (Hiring Speed)
+Managing Expectations and Talent Advising from HM’s view
+Weekly reviews and presentations on the hiring strategies with HisWorking as a Recruiting Strategic Partner for the business units, Engineering teams, Cloud Product teams. End to End Recruitment, Technology recruitment, Internal Recruitment, Campus Recruitment Working closely with hiring managers to establish comprehensive sourcing strategies to meet current hiring needs as well as to build pipelines for the projected requirements. Sourcing, screening, and qualifying the candidates and sharing the recommendations with hiring managers, on why would the candidate be a valuable addition to the team. Defining Hiring Bar and Talent Advisory Planning (Hiring Speed) Managing Expectations and Talent Advising from HM’s view Weekly reviews and presentations on the hiring strategies with His…see more
+Show all 7 experiences
+EducationEducation
+KL University logo
+KL University
+KL University
+Bachelor's degree, Computer ScienceBachelor's degree, Computer Science
+2013 - 20172013 - 2017
+Licenses & certificationsLicenses & certifications
+LinkedIn logo
+Become a Technical Recruiter
+Become a Technical Recruiter
+LinkedInLinkedIn
+Issued May 2020Issued May 2020
+Credential ID AdRx0dSJ0KwQuQDWdG5m6ClMF2moCredential ID AdRx0dSJ0KwQuQDWdG5m6ClMF2mo
+LinkedIn logo
+Confronting Bias: Thriving Across Our Differences
+Confronting Bias: Thriving Across Our Differences
+LinkedInLinkedIn
+Issued May 2020Issued May 2020
+Show credential
+Show all 32 licenses & certifications
+VolunteeringVolunteering
+Harvard Business Review logo
+HBR Ascend Select Member
+HBR Ascend Select Member
+Harvard Business ReviewHarvard Business Review
+Jul 2020 - Jul 2021 · 1 yr 1 moJul 2020 - Jul 2021 · 1 yr 1 mo
+HBR Ascend Select is an exclusive and an invite-only community of aspiring leaders, handpicked by HBR Ascend. As a member, I get the opportunity to share my views and opinions with the editorial, marketing, and product teams of HBR Ascend. I also participate in various research projects led by HBR Ascend.HBR Ascend Select is an exclusive and an invite-only community of aspiring leaders, handpicked by HBR Ascend. As a member, I get the opportunity to share my views and opinions with the editorial, marketing, and product teams of HBR Ascend. I also participate in various research projects led by HBR Ascend.…see more
+President, Co-Founder
+President, Co-Founder
+President, Co-Founder
+Saakar Welfare SocietySaakar Welfare Society
+May 2013 - Dec 2014 · 1 yr 8 mosMay 2013 - Dec 2014 · 1 yr 8 mos
+Social ServicesSocial Services
+SkillsSkills
+Hiring Trends
+Hiring Trends
+Company logo
+Corporate Recruiter at AppleCorporate Recruiter at Apple
+Hiring
+Hiring
+Company logo
+Recruiter- I, Consumer Tech at AmazonRecruiter- I, Consumer Tech at Amazon
+Samir Paul profile picture
+Endorsed by 1 person in the last 6 monthsEndorsed by 1 person in the last 6 months
+3 endorsements
+3 endorsements
+Show all 42 skills
+RecommendationsRecommendations
+ReceivedReceived
+GivenGiven
+Thawheed Rashid-Tarafder
+Thawheed Rashid-Tarafder
+Thawheed Rashid-Tarafder
+· 2ndSecond degree connection
+Technical Sourcer, Machine Learning at MetaTechnical Sourcer, Machine Learning at Meta
+February 17, 2023, Thawheed worked with Akhil on the same teamFebruary 17, 2023, Thawheed worked with Akhil on the same team
+I had the pleasure of mentoring and working with Akhil at Meta. He consistently impressed with his ability to generate creative and effective ideas, which he applied to his work as a technical sourcer. His insights into the Indian market were especially valuable given our focus on ML, AI and CV. He was able to educate others through running effective sourcathons utilising market mapping techniques and an ability to find the more obscure talent.
+
+In a short space of time Akhil was able to build strong relationships and become a popular member of the team, his positive energy is infectious and can-do attitude will help him go far in his career. I look forward to watching him grow and believe he will be an asset to any team.I had the pleasure of mentoring and working with Akhil at Meta. He consistently impressed with his ability to generate creative and effective ideas, which he applied to his work as a technical sourcer. His insights into the Indian market were especially valuable given our focus on ML, AI and CV. He was able to educate others through running effective sourcathons utilising market mapping techniques and an ability to find the more obscure talent. In a short space of time Akhil was able to build strong relationships and become a popular member of the team, his positive energy is infectious and can-do attitude will help him go far in his career. I look forward to watching him grow and believe he will be an asset to any team.
+Roman Strom
+Roman Strom
+Roman Strom
+· 3rdThird degree connection
+Senior Recruiter @ MetaSenior Recruiter @ Meta
+February 1, 2023, Roman managed Akhil directlyFebruary 1, 2023, Roman managed Akhil directly
+I've been supporting Akhil for almost a year. Akhil is a hard working individual. He has vast knowledge of recruiting for ML, Computer Vision and SWE roles. In his day to day, Akhil is motivated by results, delivers consistently, stays on top of his metrics, is able to self-correct and - genuinely - seeks to contribute meaningfully to the work of others in the team. Akhil is also fun to have on the team, he is approachable, he builds communities fast and people naturally rely him. Akhil is talented and is a huge asset for any team he is on.I've been supporting Akhil for almost a year. Akhil is a hard working individual. He has vast knowledge of recruiting for ML, Computer Vision and SWE roles. In his day to day, Akhil is motivated by results, delivers consistently, stays on top of his metrics, is able to self-correct and - genuinely - seeks to contribute meaningfully to the work of others in the team. Akhil is also fun to have on the team, he is approachable, he builds communities fast and people naturally rely him. Akhil is talented and is a huge asset for any team he is on.
+InterestsInterests
+CompaniesCompanies
+GroupsGroups
+NewslettersNewsletters
+SchoolsSchools
+IBM logo
+IBM
+IBM
+19,083,265 followers19,083,265 followers
+
+Following
+GE logo
+GE
+GE
+5,161,429 followers5,161,429 followers
+
+Follow
+Show all companies
+</input>
+<output>
+{
+    "name": "Akhil Ravipalli"
+    "headline": " Corporate Recruiting @ Apple || Ex-Meta, London || Ex- Amazon" 
+    "about": "As an accomplished talent partner with 8 years of experience building top-performing teams across multiple countries. Whether it's identifying and securing diverse talent, hiring for leadership roles, or mentoring junior team members, I have a proven track record of success. With extensive experience in companies like Apple, Meta, Amazon, Infor and working in a startup environment, I possess a deep understanding of the nuances and cultural differences within each market."
+    "current_company": "apple" 
+    "current_job_title": "corporate_recruiter"
+    "duration_in_current_company": "1 yr 10 mos"
+    "currect_company_location": "hyderabad, telangana, india"
+    "previous_experiences": [
+        "even": "recruitment partner",
+        "meta": "tech recruiter- AI/ML",
+        "amazon": "recruiter- 1, consumer Tech",
+        "infor": "recruiter",
+        "objectwin technology": "recuiter"
+    ]
+    "education": [
+        "kl university": "bachelor's defree computer science"
+    ]
+    "additional_info": [<instruction>add points relating to this person that will be helpful in colding messaging this person and seeking/requesting/guidance for job referral. It should be list of strings.</instruction>]
+}
+</output>
+</example 1>
+
+input: <input>$profile_text</input>
