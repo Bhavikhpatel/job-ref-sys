@@ -14,7 +14,7 @@ db = Database(
     host='gateway01.ap-southeast-1.prod.aws.tidbcloud.com',
     port=4000,
     database='JOB_HUNTING',
-    ca_path='/home/bhavikhpatel/job_referral_software_ver_1.0/ver_1.1/keys/isrgrootx1.pem'
+    ca_path=os.environ["DB_SSL_PEM"]
 )
 
 llm = LLM()
