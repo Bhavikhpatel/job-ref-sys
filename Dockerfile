@@ -7,4 +7,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["gunicorn", "-b", ":8080", "app.main:app"]
+# Use Cloud Run PORT env variable (default 8080)
+ENV PORT 8080
+CMD exec gunicorn --bind 0.0.0.0:${PORT} main:app
