@@ -11,3 +11,4 @@ python-docx
 docxtpl
 docx2pdf
 google-cloud-storage
+gunicorn
